@@ -1,0 +1,17 @@
+{
+  "name": "fullstack-app",
+  "version": "1.0.0",
+  "description": "A modern fullstack application using React (web), Expo (mobile), Node.js (backend), and PostgreSQL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run start:web\" \"npm run start:mobile\"",
+    "dev": "concurrently \"cd mobile && npm run start\" \"cd frontend && npm run dev\" \"cd backend && npm run dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
